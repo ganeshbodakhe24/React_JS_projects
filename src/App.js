@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import P_1_inc_dec_count from './P_1_inc_dec_count/P_1_inc_dec_count';
+import P_2_Fetch_api_by_get_method from './P_2_Fetch_api_by_get_method/P_2_Fetch_api_by_get_method';
+import { useState } from 'react';
 function App() {
+  let [count,setCount]=useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   {/* <P_1_inc_dec_count></P_1_inc_dec_count> */}
+   <P_2_Fetch_api_by_get_method></P_2_Fetch_api_by_get_method>
+   </>
   );
 }
 
